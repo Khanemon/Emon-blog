@@ -3,80 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Potfolio Pratice</title>
     <link rel="stylesheet" href="EK_Pot.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Potfolio</title>
 </head>
 <body>
-    <!-- Header section start here -->
-    <header class="header">
-        <div class="header__logo">
-             <img class="logo" src="Ligo.png" alt="image">
-        </div>
-        <div class="nevi__element">
-                <h2 class="element">Home</h2>
-                <h2 class="element">About</h2>
-                <h2 class="element">Archives</h2>
-                <h2 class="element">Blog Posts</h2>
-                <h2 class="element">Contact</h2>
-        </div>
+    <!-- header starts here -->
+    <header id="blog-header">
+        <figure class="logo-figure"> <i class="fa-brands fa-etsy logo"></i></figure>
+        <i class="fa fa-bars fa-4x" id="menu__icon2"></i>
+        <nav id="menu-icon" class="hidden">
+            <ul class="nav">
+                <li><a class="nav__link" href="#blog-banner-section">Home</a></li>
+                <li><a class="nav__link" href="#blog-about">About</a></li>
+                <li><a href="#archieves" class="nav__link">Archieves</a></li>
+                <li><a href="#blog-posts" class="nav__link">Blog post</a></li>
+                <li><a href="#contract-section" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Header section end here -->
+    <!-- header ends here -->
+
+    <main>
+        <!-- blog-banner section starts here -->
+            <section id="blog-banner-section" class="banner">
+                <article>
+                    <h1 class="banner__heading">Web Devolopment</h1>
+                    <p class="banner__decription text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate aperiam atque velit nisi vero placeat sapiente iusto impedit at ea delectus, voluptatibus quibusdam architecto iure ipsa laborum maxime corrupti.</p>
+                </article>
+                <aside>
+                    <img class="banner__image" src="header.svg" alt="Cover photo not find.">
+                </aside>
+            </section>
+
+        <!-- blog-banner section ends here -->
 
 
-    <!-- Banner section start here -->
-    <section>
-        <div class="banner">
-            <div class="descption">
-                <div class="desc__titel"><h1>Web devolopment</h1></div>
-                <div class="desc__body"><p>Lorem ipsum dolor sit amet 
-                    consectetur, adipisicing elit. Recusandae assumenda
-                     in quis unde quae quibusdam, illum quidem eaque. Tempora
-                      ab magnam blanditiis qui optio ex maxime dolore earum
-                       architecto velit.</p></div>
+
+
+
+        <!-- about-me section starts here -->
+        <section id="blog-about" class="section-center">
+            <h2 class="section__heading abo-me__heading">About Me</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card__heading">Education</h3>
+                    <p class="card__descptoin text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit culpa minima corrupti ipsum ex vitae tenetur accusamus. Veniam, cumque similique!</p>
+                    <button class="card__btn btn">Read more</button>
+                </div>
+                <div class="card">
+                    <h3 class="card__heading">Education</h3>
+                    <p class="card__descptoin text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit culpa minima corrupti ipsum ex vitae tenetur accusamus. Veniam, cumque similique!</p>
+                    <button class="card__btn btn">Read more</button>
+                </div>
+                <div class="card">
+                    <h3 class="card__heading">Education</h3>
+                    <p class="card__descptoin text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit culpa minima corrupti ipsum ex vitae tenetur accusamus. Veniam, cumque similique!</p>
+                    <button class="card__btn btn">Read more</button>
+                </div>
             </div>
-            <div class="banner__photo">
-                <img class="photo--restu" src="Resturant.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Banner section end here -->
+        </section>    
+
+        <!-- about-me section ends here -->
 
 
 
-    <!-- About me section start here -->
-    <div class="aboutme">
-        <div class="aboutme__title">About Me</div>
-        <div class="aboutme__card">
-            <div class="card">
-                <div><p class="card__title">Education</p></div>
-                <div class="card__body">Lorem ipsum, dolor sit
-                    amet consectetur adipisicing elit. Laboriosam
-                    unde aliquid placeat omnis minima dolorum. Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit.
-                    Expedita a placeat ad ex natus qui.</div>
-                <div class=""><button class="card__btn">READ MORE</button></div>
-            </div>
-            <div class="card">
-                <div><p class="card__title">Education</p></div>
-                <div class="card__body">Lorem ipsum, dolor sit
-                    amet consectetur adipisicing elit. Laboriosam
-                    unde aliquid placeat omnis minima dolorum. Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit.
-                    Expedita a placeat ad ex natus qui.</div>
-                <div ><button class="card__btn">READ MORE</button></div>
-            </div>
-            <div class="card">
-                <div><p class="card__title">Education</p></div>
-                <div class="card__body">Lorem ipsum, dolor sit
-                    amet consectetur adipisicing elit. Laboriosam
-                    unde aliquid placeat omnis minima dolorum. Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit.
-                    Expedita a placeat ad ex natus qui.</div>
-                <div class=""><button class="card__btn">READ MORE</button></div>
-            </div>
-        </div>     
-    </div>
 
-    <!-- About me section end here -->
+        <!-- archieves section starts here -->
+            <section id="archieves" class="section-center">
+                <h2 class="section__heading archieves__heading">Archieves</h2>
+                <div class="archieves-container">
+                    <ul class="archieves__lists">
+                        <li class="archieves__list"><img class="archieves__image" src="Img (4).svg" alt="image1"></li>
+                        <li class="archieves__list"><img class="archieves__image" src="Img (2).svg" alt="image2"></li>
+                        <li class="archieves__list"><img class="archieves__image" src="Img (1).svg" alt="image3"></li>
+                        <li class="archieves__list"><img class="archieves__image" src="Img (3).svg" alt="image4"></li>
+                    </ul>
+                </div>
+            </section>
+        <!-- archieves section ends here -->
+
+        <!-- blog-posts section starts here -->
+        <section id="blog-posts" class="section-center">
+            <h2 class="section__heading">Blog Posts</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                     <aside class="blog-post__aside"><img class="img__center" src="Img (3).svg" alt="image1"></aside>
+                     <article class="blog-post__content">
+                        <h2 class="blog-post__heading">Blog 1</h2>
+                        <h3 class="blog-post__sub-heading">this is subtitle here</h3>
+                        <p class="blog-post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, possimus cupiditate maxime ex eum harum eos facere veniam. Nostrum maiores atque veniam odio delectus voluptas expedita voluptates beatae vitae mollitia.</p>
+                        <button class="btn blog-post__btn">Learn More</button>
+                     </article>
+                </div>
+                <div class="blog-post">
+                    <aside class="blog-post__aside"><img class="img__center" src="Img (2).svg" alt="image1"></aside>
+                    <article class="blog-post__content">
+                       <h2 class="blog-post__heading">Blog 2</h2>
+                       <h3 class="blog-post__sub-heading">this is subtitle here</h3>
+                       <p class="blog-post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, possimus cupiditate maxime ex eum harum eos facere veniam. Nostrum maiores atque veniam odio delectus voluptas expedita voluptates beatae vitae mollitia.</p>
+                       <button class="btn blog-post__btn">Learn More</button>
+                    </article>
+               </div>
+               <div class="blog-post">
+                <aside class="blog-post__aside"><img class="img__center" src="Img (1).svg" alt="image1"></aside>
+                <article class="blog-post__content">
+                   <h2 class="blog-post__heading">Blog 3</h2>
+                   <h3 class="blog-post__sub-heading">this is subtitle here</h3>
+                   <p class="blog-post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, possimus cupiditate maxime ex eum harum eos facere veniam. Nostrum maiores atque veniam odio delectus voluptas expedita voluptates beatae vitae mollitia.</p>
+                   <button class="btn blog-post__btn">Learn More</button>
+                </article>
+           </div>
+            </div>
+        </section>
+    <!-- blog-posts section ends here -->
+
+    <!-- contact section starts here -->
+        <section id="contract-section" class="section-center">
+            <h2 class="section__heading text-color">Contact Me</h2>
+            <form >
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="name" id="name" autocomplete="name" required />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" autocomplete="email" required />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-control from-btn-field">
+                    <button class="btn contact__btn">Submit</button>
+                </div>
+            </form>
+        </section>
+
+    <!-- contact section ends here -->
+    </main>
+    
+    <!-- footer section starts here -->
+    <footer class="footer">
+        <p class="copyright__text">Copyright &copy; by Emon Khan. All rights reserved</p>
+        <nav class="footer__nav"> 
+            <a href="#blog-banner-section" class="footer__link icon1"><i class='fa fa-home footer__icon'></i></a>
+            <a href="https://www.facebook.com/MD.Emon.Hossain.Khan.Bengir" target="_blank" class="footer__link icon2"><i class='fab fa-facebook footer__icon'></i></a>
+    
+            <a href="https://youtube.com/@emonhossainkhanbengir1307" target="_blank" class="footer__link icon3"><i class='fab fa-youtube footer__icon'></i></a>
+    
+            <a href="https://www.linkedin.com/in/emon-hossain-khan-bengir-78707322b" target="_blank" class="footer__link icon4"><i class='fab fa-linkedin footer__icon'></i></a>
+    
+            <a href="https://github.com/Khanemon" target="_blank" class="footer__link icon5"><i class='fab fa-github footer__icon'></i></a>
+        </nav>
+    </footer>
+    <!-- footer section ends here -->
+
+    <script src="EK_Pot.js"></script>
 </body>
 </html>

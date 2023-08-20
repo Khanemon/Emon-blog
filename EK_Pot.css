@@ -1,166 +1,456 @@
+/* reset code and common starts here. */
 *{
     box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
     margin: 0;
     padding: 0;
-}
-/* Header section start here. */
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: black;
-    position: fixed;
-    z-index: 2;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-}
-.header__logo{
-    justify-self: flex-start;
-    padding: 0.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
 }
 
-.nevi__element{
-    display: flex;
-    align-items: center;
-    justify-items: flex-end;
-    flex-direction: row;
-
-    gap: 3rem;
-    padding-right: 1rem;
-    color: white;
+:root{
+    --transition: all 0.3s;
+    --scale: scale(1.1);
+}
+html{
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem 0.1rem 0.1rem #c4c4c4;
+    /* box-shadow: ; */
 }
 
-.element{
-    transition: all;
-    transition-timing-function: linear;
+.text-justify{
+    text-align: justify;
 }
-.element:hover{
-    transition-duration: 0.2s;
-    background-color: blue;
-}
-/* Header section end here. */
-
-/* Banner section start here. */
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 100vh;
-    
-}
-.descption{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 2%;
-}
-.desc__titel{
-    background-color: black;
-    color: white;
-    max-width: 35%;
-    font-size: 1.2rem;
-}
-.desc__body{
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 70%;
+.text-color{
+    color: white !important;
 }
 
-.banner__photo{
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-    height: 60vh;
-    margin-right: 2%;
-    
+.btn{
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
-.photo--restu{
-    border: 10px solid black;
+.section__heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    color: black;
+    font-weight: 500;
 }
-/* Banner section end here. */
-
-
-
-
-/* About me section start here */
-.aboutme{
-    width: 100%;
-    height: 92vh;
-    background-color: #2c2c2c;
-
+.section-center{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-.aboutme__title{
-    position: relative;
-    top: -100px;
-    font-size: 4rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-.aboutme__card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    min-height: 95vh;
     justify-content: space-evenly;
-    gap: 1rem;
+    align-items: center;
 
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* reset code and common ends here. */
+
+
+/* header starts here */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+#menu__icon2{
+    display: none;
+}
+.logo-figure{
+    border: 1px solid white;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    padding: 1rem;
+    transition: all 0.4s;
+    display: block;
+}
+nav ul li:hover{
+    background-color: brown;
+    border-radius: 0.6rem;
+    transform: var(--scale);
+}
+.nav__link{
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* header ends here */
+
+
+/* banner section starts here  */
+.banner{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+.banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner__heading{
+    display: inline-block;
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem ;
+    font-size: 4rem;
+
+}
+.banner__decription{
+    font-size: 1.8rem;
+}
+.banner__image{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+/* banner section ends here  */
+
+/* about-me section starts here  */
+#blog-about{
+    background-color: #4c4c4c;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .card{
+     flex: 1; /*every one take same space */
+     border-radius: 0.6rem;
+     background-color: #a09d9d;
+     padding: 3rem 1rem;
+     margin: 2rem;
+     gap: 0.6rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     transition: var(--transition);
+}
+.abo-me__heading{
+    color: white;
+}
+.card:hover{
+    transform: var(--scale);
+}
+.card__heading{
+    font-size: 3rem;
+}
+.card__descptoin{
+    padding: 0.4rem 0;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+/* about-me section ends here  */
+
+/* archieves section starts here */
+.archieves-container{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+.archieves__lists{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.archieves__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem ;
+    transition: var(--transition);
+}
+.archieves__image:hover{
+    transform: var(--scale);
+}
+/* archieves section ends here */
+
+/* blog-posts section starts here */
+.blog-posts{
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-
-    width: 30%;
-    color: black;
-    padding: 1rem;
-    background-color: grey;
-    border-radius: 1rem;
+    gap: 2rem;
 }
-
-.card__title{
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-.card__btn{
-    
-    background-color: orange;
-    position: relative;
-    top: 5px;
-    border-radius: 5%;
-    direction: none;
-}
-/* About me section end here */
-
-
-
-/* .emon{
+.blog-post{
+    width: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) ;
-    background-color: black;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    transition: var(--transition);
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem -0.1rem 0.1rem #c4c4c4;
+    border-radius: 1rem;
+}
+.blog-post:hover{
+    transform: var(--scale);
+}
+.blog-post__aside{
+    height: 100%;
+    flex: 1;
+}
+.blog-post__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 1rem;
+    margin-left: 2rem;
+    flex: 2;
+    gap: 1rem;
+}
+.blog-post__heading{
+    margin-bottom: 1rem;
+    font-size: 2.5rem
+}
+.blog-post__sub-heading{
+    font-size: 2rem
+}
+.blog-post__description{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.blog-post__btn{
+    width: 30%;
+}
+
+/* blog-posts section ends here */
+
+/* contact section starts here */
+form{
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem -0.1rem 0.1rem #c4c4c4;
+    padding: 1rem;
+    color: #fff;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#contract-section{
+    background-color: #4c4c4c;
+    min-height: 95vh;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+.form-control >input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.from-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact__btn{
+    width: 30%;
+}
+/* contact section ends here */
+
+/* footer section starts here */
+.footer{
+    background-color: black;
+    color: white;
+    min-height: 5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+
+}
+.footer__nav{
+    display: flex;
+    gap: 2rem;
+}
+.footer__icon{
+    font-size: 2rem;
+}
+.copyright__text{
+    font-size: 1.5rem;
+}
+.footer__link{
+    transition: var(--transition);
+    color: white;
+}
+.footer__link:hover{
+    color: orange;
+    transform: scale(2);
+}
+.icon1:hover{
+    color: aquamarine;
+}
+.icon2:hover{
+    color: #0F90F3;
+}
+.icon3:hover{
+    color: red;
+}
+.icon4:hover{
+    color: #0073B2;
+}
+.icon5:hover{
+    color: whitesmoke;
+}
+
+
+/* footer section ends here */
+
+/* responsiveness starts here */
+@media screen and (max-width: 992px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+    .banner article{
+        width: 80%;
+    }
+    .cards{
+        width: 80%;
+        flex-direction: column;
+    }
+    #archieves{
+        min-height: auto;
+    }
+    .blog-post{
+        padding-left: 0;
+        width: 80%;
+        flex-direction: column;
+    }
+    #contract-section{
+        min-height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    #menu__icon2{
+        display: block;
+        margin: 2rem 0;
+    }
+    .hidden{
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        padding-left: 2.5rem;
+    }
+    .banner{
+        min-height: auto;
+    }
+    .banner article{
+        width: 90%;
+    }
+    .banner__image{
+        max-width: 100%;
+        /* width: 90%; */
+    }
+    #blog-about{
+        min-height: auto;
+    }
+    .cards{
+        width: 90%;
+    }
+    .archieves__lists{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        gap: 3rem;
+    }
+    .blog-post{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control >input, textarea{
+        margin-bottom: 0.5rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
 
 }
 
-.emon__edit{
-    min-width: 20%;
-    margin: 1rem;
-    text-align: center;
-    background-color: goldenrod;
-} */
+/* responsiveness ends here */
